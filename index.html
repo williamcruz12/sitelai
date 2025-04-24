@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Casa da Laidinha</title>
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+   <!-- Buy Now -->
+   <link rel="stylesheet" href="compras.html">
+  <!-- Formulario-->
+  <script type="text/javascript" src="formulario.js"></script>
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <!-- Font Family -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <!-- Font Awesome versão mais recente (compatível com 'fas fa-solid fa-cart-shopping') -->
+  <script src="font-awesome.css" crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoDbZz+U5iPoT4KJk7SkWcY8WcHJ0k8Vx08H+VU5mT94wrF" crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- validar telefones   CSS da lib -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@18.1.1/build/css/intlTelInput.css" />
+<!-- JS da lib -->
+  <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@18.1.1/build/js/intlTelInput.min.js"></script>
+<!-- Buy Now -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+</head>
+
+
+<body>
+  <header>
+    <div>
+      <h1 style="text-align: center; font-family:'PT Serif', serif;">
+      <img src="logo.PNG" class="rounded float-left" alt="brasao" width="50px">Casa da Laidinha</h1>
+      <p style="text-align: center;">Aproveite seu passeio e visite a loja 🎁</p>
+    </div>
+    
+    <nav class="navbar navbar-expand-lg bg-body-red">
+  <div class="container-fluid">
+    <!-- Botão de toggle para tela pequena -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"  data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Atividades
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#durao">Miradouro de Penedo Durão</a></li>
+            <li><a class="dropdown-item" href="#durao">Barragem de Saucelle</a></li>
+            <li><a class="dropdown-item" href="#durao">Miradouro de Mafeito</a></li>
+          </ul>
+        </li>
+        
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#gastro" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Gastronomia 
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#gastro">Bacalhau</a></li>
+            <li><a class="dropdown-item" href="#gastro">Alheira</a></li>
+            <li><a class="dropdown-item" href="#gastro">Vitela</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#vinho" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Vinhos
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#vinho">Branco</a></li>
+            <li><a class="dropdown-item" href="#vinho">Tinto</a></li>
+            <li><a class="dropdown-item" href="#vinho">Rose</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#azeite1" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            O Azeite
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#azeite1">A Criacao</a></li>
+            <li><a class="dropdown-item" href="#azeite2">Bay Now</a></li>
+            
+          </ul>
+        </li>
+
+        <li  class="nav-item">
+          <a class="nav-link" href="compras.html">
+            <i class="fas fa-shopping-cart"></i> Lai Store
+          </a>
+        </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<section class="video">
+  <video autoplay loop muted playsinline>
+    <source src="46301467-04bc-4812-a22d-5526dfda10a8 (1).MOV" type="video/mp4">
+  </video>
+  <div class="caption">
+    <!--<h1>Freixo de Espada à Cinta</h1>  texto por cima do video-->
+  </div>
+</section>
+
+</header>
+
+<body>
+  <main>
+    <div class="container py-5" id="historia">
+      <h2 class="mb-4 text-center" >📖A História</h2>
+  
+    <div class="row align-items-center g-4">
+      <!-- Coluna da imagem -->
+      <div class="col-12 col-md-4">
+        <img src="freixo300.jpg" alt="Azeite artesanal" class="img-fluid" style="border-radius: 10px; box-shadow: 0px 2px 2px #ffa500; ">
+      </div>
+  
+      <!-- Coluna do texto -->
+      <div class="col-12 col-md-8">
+        <p>
+          📖Há diversas explicações para o curioso nome desta vila. Uns dizem que teve origem no nome de um fidalgo godo “Espadacinta”, outros no brasão de um fidalgo leonês que tinha um freixo e uma espada ou, ainda, na lenda que diz que D. Dinis, rei de Portugal, quando fundou a localidade no séc. XIV, amarrou a sua espada a um freixo, antes de se encostar à árvore a descansar. Essa árvore, de grande porte, está há mais de 500 anos no largo principal da vila e merece observação atenta.
+        </p>
+      </div>
+    </div>
+  </div>
+  
+
+  <div class="container py-5" id="historia">
+    <h2 class="mb-4 text-center">🏡 A casa da Laidinha em freixo</h2>
+<br><br>
+    <div class="row align-items-center g-4">
+        <!-- Coluna de texto -->
+        <div class="col-12 col-md-6 order-md-1">
+             <h5>🏡Descubra o Encanto da Nossa Casa Tradicional no Douro</h5>
+              <br>
+              <p>🏡 No coração da paisagem duriense, encontra-se uma casa típica que une o encanto do passado ao conforto dos nossos dias. Com três quartos acolhedores, uma cozinha totalmente equipada e uma sala com uma lareira maravilhosa que convida a longas conversas nas noites frias, esta casa é o verdadeiro retrato da hospitalidade do interior português.
+                <br>
+                Mais do que uma estadia, a casa oferece uma experiência autêntica de turismo rural. Rodeada por um jardim tranquilo, com piscina e uma área de lazer ideal para relaxar ou conviver em família, a casa proporciona o cenário perfeito para descansar, explorar e saborear a vida com calma.
+                <br>
+                Aqui, os dias começam com o canto dos pássaros e terminam sob um céu estrelado típico do Douro Superior. Seja para um fim de semana de descanso ou umas férias mais longas, este é o lugar onde a natureza, a tradição e o bem-estar se encontram.
+            </p>
+        </div>
+
+        <!-- Coluna do carrossel (Agora à direita) -->
+        <div class="col-12 col-md-6 order-md-2">
+            <div id="carouselExampleCaptions" class="carousel slide carousel-fade mx-auto" data-bs-ride="carousel" data-bs-interval="1000" data-bs-wrap="true">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                </div>
+
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img style="border-radius: 10px; box-shadow: 0px 2px 2px #ffa500;" src="sala3.JPG" class="d-block w-100" alt="Imagem 1">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Casa Tradicional</h5>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img style="border-radius: 10px; box-shadow: 0px 2px 2px #ffa500;" src="sala.JPG" class="d-block w-100" alt="Imagem 2">
+                        <div class="carousel-caption d-none d-md-block">
+                            <p>Produzido com paixão e tradição.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img style="border-radius: 10px; box-shadow: 0px 2px 2px #ffa500;" src="quarto2.JPG" class="d-block w-100" alt="Imagem 3">
+                        <div class="carousel-caption d-none d-md-block">
+                            <p>Produzido com paixão e tradição.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img style="border-radius: 10px; box-shadow: 0px 2px 2px #ffa500;" src="quarto3.JPG" class="d-block w-100" alt="Imagem 4">
+                        <div class="carousel-caption d-none d-md-block">
+                            <p>Sabores únicos que contam histórias.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img style="border-radius: 10px; box-shadow: 0px 2px 2px #ffa500;" src="quarto1.JPG" class="d-block w-100" alt="Imagem 5">
+                        <div class="carousel-caption d-none d-md-block">
+                            <p>Sabores únicos que contam histórias.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img style="border-radius: 10px; box-shadow: 0px 2px 2px #ffa500;" src="sala.JPG" class="d-block w-100" alt="Imagem 6">
+                        <div class="carousel-caption d-none d-md-block">
+                            <p>Sabores únicos que contam histórias.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Próximo</span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="text-center mt-5">
+      <h4 class="mb-4 text-center">🏡Casa da Laidinha, o seu refúgio no Douro!🏡</h4>
+      <p style="text-align: center;" >Viva uma experiência única em Freixo de Espada à Cinta <br>arrende a Casa da Laidinha e sinta-se em casa no coração do Douro.</p>
+         
+      <a style="background-color:rgb(78, 109, 78);" href="compras.html" target="_blank" class="btn btn-primary btn-lg">Reserve ja</a>
+      <br><br>
+    </div>
+</div>
+
+
+
+  <div id="atv" class="container py-5">
+    <h2 style="text-align: center; padding-bottom: 50px;" >🧭Atividades na região</h2>
+    <div class="row text-center">
+
+<!-- Atividade: Nossa Sra. do Douro -->
+      <div class="col-md-4" data-aos="fade-right" data-aos-delay="100">
+        <h5 id="durao" >🚶‍♂️ Miradouro de Penedo Durão  </h5>
+        <div  class="carousel-wrapper container py-5">
+          <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="1000" data-bs-wrap="true">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+             
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img style="border-radius: 10px; box-shadow: 0px 2px 2px #ffa500;" src="Santa300.png" class="d-block w-100" alt="Imagem 1">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>N.S Douro</h5>
+                  <p>Santa da regiao.</p>
+                </div>
+              </div>
+      
+              <div class="carousel-item">
+                <img style="border-radius: 10px; box-shadow: 0px 2px 2px #ffa500;" src="salcele.JPG" class="d-block w-100" alt="Imagem 2">
+                <div class="carousel-caption d-none d-md-block">
+                  <p></p>Vista para rio douro</p>
+                </div>
+              </div>
+      
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Próximo</span>
+            </button>
+          </div>
+        </div>
+        <p>🌿O Miradouro da Nossa Senhora do Douro, em Freixo de Espada à Cinta, oferece uma vista deslumbrante sobre o rio Douro e as paisagens vinícolas da região. Situado em um ponto estratégico, o miradouro permite aos visitantes contemplar a beleza natural da área, com as suas encostas íngremes e os vinhedos que se estendem até onde a vista alcança. Um local ideal para momentos de tranquilidade e apreciação da natureza, além de ser um ponto de visitação popular para quem passa pela região.</p>
+        <button class="btn btn-warning btn-sm" onclick="window.open('https://maps.app.goo.gl/L2WTEtuj1pCxa64P6');">Ver no Mapa</button>
+        <br><br><br><br>
+      </div>
+
+<!-- Atividade: Barragem de Saucelle -->
+      <div class="col-md-4" data-aos="fade-right" data-aos-delay="100">
+        <h5 >🗺️ Barragem de Saucelle  </h5>
+        <div  class="carousel-wrapper container py-5">
+          <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="1000" data-bs-wrap="true">
+      
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            </div>
+
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img style="border-radius: 10px; box-shadow: 0px 2px 2px #ffa500;" src="Barragem300.png" class="d-block w-100" alt="Imagem 1">
+                <div class="carousel-caption d-none d-md-block">
+        
+                </div>
+              </div>
+      
+              <div class="carousel-item">
+                <img style="border-radius: 10px; box-shadow: 0px 2px 2px #ffa500;" src="ponte.JPG" class="d-block w-100" alt="Imagem 2">
+                <div class="carousel-caption d-none d-md-block">
+                </div>
+              </div>
+      
+              
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Próximo</span>
+            </button>
+          </div>
+        </div>
+        <p>🌿 Barragem de Saucelle, localizada no rio Douro, na região de Trás-os-Montes, é uma importante infraestrutura hidroelétrica. Construída nos anos 1980, a barragem forma um grande lago que contribui para a produção de energia e regula o caudal do rio. Além de sua função energética, a área ao redor da barragem é conhecida por sua paisagem deslumbrante, com vistas panorâmicas sobre o rio e as montanhas circundantes, tornando-se um local popular para atividades ao ar livre, como caminhadas e observação de aves. A Barragem de Saucelle também é um ponto de interesse turístico, oferecendo aos visitantes a oportunidade de apreciar a beleza natural da região.</p>
+        
+        <button class="btn btn-warning btn-sm" onclick="window.open('https://maps.app.goo.gl/FgLbEckmPc45E6Db7');">Ver no Mapa</button>
+        <br><br><br><br>
+      </div>
+  
+<!-- Atividade: Miradouro Espanha -->
+      <div class="col-md-4" data-aos="fade-right" data-aos-delay="100">
+        <h5 >🥾 Miradouro de Mafeito  </h5>
+        <div  class="carousel-wrapper container py-5">
+          <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="1000" data-bs-wrap="true">
+      
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            </div>
+           
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img style="border-radius: 10px; box-shadow: 0px 2px 2px #ffa500;" src="Gaiola300.png" class="d-block w-100" alt="Imagem 1">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Casa Tradicional</h5>
+                </div>
+              </div>
+      
+              <div class="carousel-item">
+                <img style="border-radius: 10px; box-shadow: 0px 2px 2px #ffa500;" src="ponte.JPG" class="d-block w-100" alt="Imagem 2">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Quarto</h5>
+                </div>
+              </div>
+
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Próximo</span>
+            </button>
+          </div>
+        </div>
+        <p>🌿O Miradouro de Mafeito, oferece uma vista panorâmica incrível sobre o rio Douro e a região circundante. Situado em um ponto elevado, é um local ideal para contemplar a beleza natural da área, com destaque para os vinhedos e as paisagens montanhosas. O miradouro é um excelente ponto de parada para quem visita a região, proporcionando momentos de tranquilidade e apreciação do cenário.</p>
+        <button class="btn btn-warning btn-sm" onclick="window.open('https://goo.gl/maps/xyz');">Ver no Mapa</button>
+ 
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="container py-5">
+    <br><br>
+    <h2 id="gastro" style="text-align: center;">🍽️ Gastronomia</h2>
+    <br><br>
+    <div class="row text-center">
+      <div class="col-md-4">
+        <h5>Bacalhau</h5>
+        <br>
+        <img src="bacalhau.png" alt="Azeite local" class="img-fluid" style="border-radius: 10px; box-shadow: 0px 2px 2px #ffa500;max-width: 200px; max-height: 200px;">
+        <br><br><br>
+        <p>🍽️O bacalhau é um prato típico da gastronomia local, com destaque pela sua qualidade e sabor. Preparado tradicionalmente desfiado, e muitas vezes cozido com batatas, cebolas e outros temperos que realçam o sabor único do peixe. A receita, que combina simplicidade e autenticidade, é um reflexo das tradições culinárias da região, sendo muito apreciada tanto pelos habitantes locais quanto pelos visitantes. O bacalhau em Freixo de Espada à Cinta é uma das delícias que fazem parte da rica herança gastronômica do concelho.</p>
+        <a class="btn btn-secondary" href="https://pt.wikipedia.org/wiki/Bacalhau_(gastronomia)">Ver mais &raquo;</a>
+        <br><br><br><br>
+      </div>
+  
+      <div class="col-md-4">
+        <h5>Alheira</h5>
+        <br>
+        <img src="alheira.jpg" alt="Azeite local" class="img-fluid" style="border-radius: 10px; box-shadow: 0px 2px 2px #ffa500;max-width: 200px; max-height: 200px;">
+        <br><br>
+        <p>🍽️A alheira é um enchido típico da gastronomia portuguesa, especialmente popular na região de Trás-os-Montes, incluindo em Freixo de Espada à Cinta. Originalmente criada por judeus portugueses durante o período da Inquisição, a alheira foi feita com carne de aves, como frango ou pato, misturada com pão, alho e outros temperos, como forma de disfarçar o consumo de carne suína, proibida para os judeus da época.
+        Atualmente, a alheira é apreciada por seu sabor único e versatilidade. Pode ser grelhada, frita ou assada, e é frequentemente servida como prato principal ou entrada, acompanhada de arroz, batatas ou salada. A alheira de Freixo de Espada à Cinta, feita de forma artesanal, é especialmente valorizada pela sua qualidade e autenticidade.</p>
+        <a class="btn btn-secondary" href="https://pt.wikipedia.org/wiki/Alheira">Ver mais &raquo;</a>
+        <br><br><br><br>
+      </div>
+  
+      <div class="col-md-4">
+        <h5>Medalhao</h5>
+        <br>
+        <img src="carne.png" alt="Azeite local" class="img-fluid" style="border-radius: 10px; box-shadow: 0px 2px 2px #ffa500;max-width: 200px; max-height: 200px;">
+        <br><br>
+        <p>🍽️O medalhão é um prato tradicional da gastronomia de Freixo de Espada à Cinta e de várias regiões de Portugal, preparado a partir de cortes de carne, geralmente de vaca, que são macios e suculentos. O medalhão é um pedaço de carne, normalmente lombo ou filé, cortado em rodelas grossas e cozido com temperos como alho, vinho, ervas e azeite. O prato pode ser grelhado, frito ou assado, e é muitas vezes servido com acompanhamentos como arroz, batatas, legumes ou até molhos especiais.
+        A receita do medalhão é simples, mas destaca a qualidade da carne, sendo muito apreciada pela sua textura tenra e sabor intenso. Este prato é uma verdadeira iguaria para quem visita a região e deseja experimentar a autêntica cozinha portuguesa.</p>
+        <a class="btn btn-secondary" href="https://pt.wikipedia.org/wiki/Vitela">Ver mais &raquo;</a>
+      </div>
+    </div>
+  </div>
+  
+  
+  <div class="container py-5">
+    <h2 id="vinho" class="mb-4 text-center">O que beber na região</h2>
+    <br><br><br>
+    <div class="row justify-content-center">
+      <div class="col-lg-4 mb-5 text-center">
+        <img src="tinto.png" alt="Vinho tinto" class="rounded-circle mb-3 mx-auto d-block" width="200" height="200" style="object-fit: cover;">
+        <h3>Vinho tinto</h3>
+        <p>🍷Vinho tinto é a bebida resultante da fermentação do suco ou mosto extraído de uvas pretas ou tintas, com maceração das cascas no mosto para cor e sabor.</p>
+        <a class="btn btn-secondary" href="https://pt.wikipedia.org/wiki/Vinho_tinto" target="_blank">Ver mais &raquo;</a>
+      </div>
+  
+      <div class="col-lg-4 mb-5 text-center">
+        <img src="branco.png" alt="Vinho branco" class="rounded-circle mb-3 mx-auto d-block" width="200" height="200" style="object-fit: cover;">
+        <h3>Vinho branco</h3>
+        <p>🍷O vinho branco é produzido sem as cascas das uvas, o que evita a coloração escura e dá origem a tons dourados suaves.</p>
+        <a class="btn btn-secondary" href="https://pt.wikipedia.org/wiki/Vinho_branco" target="_blank">Ver mais &raquo;</a>
+      </div>
+  
+      <div class="col-lg-4 mb-5 text-center">
+        <img src="rose1.jpg" alt="Vinho rosé" class="rounded-circle mb-3 mx-auto d-block" width="200" height="200" style="object-fit: cover;">
+        <h3>Vinho rosé</h3>
+        <p>🍷O rosé resulta de fermentação com breve contato entre cascas e mosto, conferindo coloração rosada e leve sabor tânico.</p>
+        <a class="btn btn-secondary" href="https://pt.wikipedia.org/wiki/Vinho_ros%C3%A9" target="_blank">Ver mais &raquo;</a>
+      </div>
+    </div>
+  </div>
+  
+
+    <div class="container py-5" id="historia">
+      <h2 id="azeite1" class="mb-4 text-center">🫒 O Azeite </h2>
+    <br><br><br>
+      <div class="row align-items-center g-4">
+        <!-- Coluna da imagem -->
+        <div class="col-12 col-md-4">
+          <img src="azeitemovel.JPG" alt="Azeite artesanal" class="img-fluid" style="border-radius: 10px; box-shadow: 0px 2px 2px #ffa500; ">
+        </div>
+    
+        <!-- Coluna do texto -->
+        <div class="col-12 col-md-8">
+          <p>🫒
+            <strong>Azeite Extra Virgem </strong> Feito com Amor e Tradição
+            Nosso azeite é produzido a partir de azeitonas colhidas das nossas próprias oliveiras, garantindo frescor e qualidade em cada gota. <br>
+            <br>
+            Cultivado com cuidado e paixão, nosso azeite oferece um sabor único e autêntico, perfeito para dar um toque especial em suas receitas. <br>
+            <br>
+            Por que escolher o nosso azeite? <br>
+            <br>
+            <strong>Produção própria:</strong> Colhido diretamente de nossas oliveiras. <br>
+            <strong>Sabor único:</strong> Extraído com cuidado para manter suas qualidades naturais. <br>
+            <strong>Feito com amor: </strong>Um produto genuíno, criado com dedicação e carinho. <br>
+            <br>
+            Leve para sua casa o sabor puro e verdadeiro do nosso azeite!
+          </p>
+        </div>
+      </div>
+    </div>
+    
+
+    <div id="azeite2" class="row text-center justify-content-center">
+      <div class="card m-2" style="width: 18rem;">
+        <img src="Azeitegalao.JPG" alt="Azeite artesanal" class="img-fluid" style="border-radius: 10px; box-shadow: 0px 2px 2px #ffa500;height: 250px;">
+        <div class="card-body">
+          <br>
+          <h5 class="card-title">Azeite Galão 5Lt</h5>
+          <br><br>
+          <div class="d-flex justify-content-between">
+            <a href="compras.html" class="btn btn-outline-primary">Visite a loja Online</a>
+          </div>
+        </div>
+        
+      </div>
+    
+      <div class="card m-2" style="width: 18rem;">
+        <img src="azeitebase.JPG" alt="Azeite artesanal" class="img-fluid" style="border-radius: 10px; box-shadow: 0px 2px 2px #ffa500;height: 250px;">
+        <div class="card-body">
+          <br>
+          <h5 class="card-title">Azeite caixa 5Lt</h5>
+          <br><br>
+          <div class="d-flex justify-content-between">
+            <a href="compras.html" class="btn btn-outline-primary">Visite a loja Online</a>
+          </div>
+        </div>
+      </div>
+    
+      
+    
+      <div class="card m-2" style="width: 18rem;">
+        <img src="azeitemovel.JPG" alt="Azeite artesanal" class="img-fluid" style="border-radius: 10px; box-shadow: 0px 2px 2px #ffa500;">
+        <div class="card-body">
+          <br>
+          <h5 class="card-title">Combo caixa + galão</h5>
+          
+          <div class="d-flex justify-content-between">
+            <a href="compras.html" class="btn btn-outline-primary">Visite a loja Online</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="text-center mt-5">
+      <a style="background-color:rgb(78, 109, 78);" href="compras.html" target="_blank" class="btn btn-primary btn-lg">Buy Now</a>
+    </div>
+    
+  
+    <div class="mb-5">
+      <br> <br>
+      <h3 class="mb-4 text-center"> Dúvidas❓ Estamos aqui.</h3>
+      <h4 class="mb-4 text-center">Envie uma mensagem</h4>
+      <p style="text-align: center;" >Entre em contato através do formulario, responderemos todas as suas questãos.</p>
+       
+    </div>
+
+
+
+
+    <div class="container">
+      <div id="form" class="bg-dark text-white py-4 px-4 mt-5 mx-auto" style="max-width: 700px; border-radius: 10px;">
+        <h3 class="text-center mb-4">Tire suas dúvidas</h3>
+        <form>
+          <div class="row mb-3">
+            <div class="col-md-6">
+              <label for="nome" class="form-label">Nome</label>
+              <input type="text" class="form-control" id="nome" placeholder="Seu nome" required onchange="validarNome(this)">
+            </div>
+            <div class="col-md-6">
+              <label for="email" class="form-label">E-mail</label>
+              <input type="email" class="form-control" id="email" placeholder="seu@email.com" required>
+            </div>
+          </div>
+    
+          <div class="row mb-3">
+            <div class="col-md-6">
+              <label for="contacto" class="form-label">Contacto</label>
+              <div class="position-relative">
+                <input type="tel" class="form-control" id="contacto" placeholder="Digite seu telefone" required >
+              </div>
+            </div>
+    
+            <div class="col-md-6">
+              <label for="cidade" class="form-label">Cidade / País</label>
+              <input type="text" class="form-control" id="cidade" placeholder="Sua cidade e país" required>
+            </div>
+          </div>
+    
+          <div class="mb-3">
+            <label for="mensagem" class="form-label">Deixe sua questão</label>
+            <textarea class="form-control" id="mensagem" rows="4" placeholder="Escreva sua dúvida aqui..." required></textarea>
+          </div>
+    
+          <div class="text-center">
+            <button type="submit" class="btn btn-primary">Enviar</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    
+
+</body>
+
+
+ <footer style="margin-top: 20px;" class="bg-dark text-light py-3">
+        <div class="container text-center">
+        @2025 William Cruz | Web Developer | <a href="politica-privacidade.html" class="text-light">Política de Privacidade</a> </div>
+
+ </footer>
+
+</html>

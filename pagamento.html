@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout - Azeite</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" defer></script>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <script src="https://www.paypal.com/sdk/js?client-id=YOUR_CLIENT_ID&currency=EUR"></script>
+
+</head>
+<body>
+    <div>
+        <h1 style="text-align: center; font-family:'PT Serif', serif;">
+        <img src="logo.PNG" class="rounded float-left" alt="brasao" width="100px">Lai Store</h1>
+        <p style="text-align: center;">Boas compras  </p>
+        </div>
+<div class="container py-5">
+  <h2 class="mb-4">Resumo do Carrinho</h2>
+  <ul class="list-group mb-3">
+    <li class="list-group-item d-flex justify-content-between align-items-center">
+      Caixa 5Lt
+      <div>
+        <button onclick="removerProduto('carrinho1')" class="btn btn-sm btn-danger">–</button>
+        <span id="resumo1" class="mx-2">0</span>
+        <button onclick="adicionarProduto('carrinho1')" class="btn btn-sm btn-success">+</button>
+      </div>
+    </li>
+    <li class="list-group-item d-flex justify-content-between align-items-center">
+      Galão 5Lt
+      <div>
+        <button onclick="removerProduto('carrinho2')" class="btn btn-sm btn-danger">–</button>
+        <span id="resumo2" class="mx-2">0</span>
+        <button onclick="adicionarProduto('carrinho2')" class="btn btn-sm btn-success">+</button>
+      </div>
+    </li>
+    <li class="list-group-item d-flex justify-content-between align-items-center">
+      Combo Caixa + Galão
+      <div>
+        <button onclick="removerProduto('carrinho3')" class="btn btn-sm btn-danger">–</button>
+        <span id="resumo3" class="mx-2">0</span>
+        <button onclick="adicionarProduto('carrinho3')" class="btn btn-sm btn-success">+</button>
+      </div>
+    </li>
+  </ul>
+  <h4>Total: € <span id="valor-total">0.00</span></h4>
+
+  <div class="my-3">
+    <button class="btn btn-warning" onclick="limparCarrinho()">Limpar Carrinho</button>
+    <a id="whatsappBtn" href="351910850273" class="btn btn-success" target="_blank">Finalizar via WhatsApp</a>
+  </div>
+
+  <!-- Stripe ou PayPal vai aqui -->
+  <div class="mt-4">
+    <h5>Pagamento com Stripe (em breve)</h5>
+    <p>Integração segura com cartão de crédito.</p>
+  </div>
+</div>
+
+
+
+  
+
+<a href="index.html">VOLTAR A PAGINA Principal</a>
+<br> <br> <br>
+<a href="compras.html">VOLTAR A PAGINA Compras</a>
+
+  
+
+<script>
+  let carrinho1 = parseInt(localStorage.getItem('carrinho1')) || 0;
+  let carrinho2 = parseInt(localStorage.getItem('carrinho2')) || 0;
+  let carrinho3 = parseInt(localStorage.getItem('carrinho3')) || 0;
+
+  function atualizarResumo() {
+    document.getElementById('resumo1').innerText = carrinho1;
+    document.getElementById('resumo2').innerText = carrinho2;
+    document.getElementById('resumo3').innerText = carrinho3;
+    let total = carrinho1 * 39.90 + carrinho2 * 39.90 + carrinho3 * 79.90;
+    document.getElementById('valor-total').innerText = total.toFixed(2);
+    let mensagem = `Olá! Gostaria de comprar:\n- ${carrinho1}x Caixa 5Lt\n- ${carrinho2}x Galão 5Lt\n- ${carrinho3}x Combo\nTotal: € ${total.toFixed(2)}`;
+    document.getElementById('whatsappBtn').href = `https://wa.me/3519XXXXXXXXX?text=${encodeURIComponent(mensagem)}`;
+  }
+
+  function adicionarProduto(tipo) {
+    if (tipo === 'carrinho1') carrinho1++;
+    if (tipo === 'carrinho2') carrinho2++;
+    if (tipo === 'carrinho3') carrinho3++;
+    salvar();
+  }
+
+  function removerProduto(tipo) {
+    if (tipo === 'carrinho1' && carrinho1 > 0) carrinho1--;
+    if (tipo === 'carrinho2' && carrinho2 > 0) carrinho2--;
+    if (tipo === 'carrinho3' && carrinho3 > 0) carrinho3--;
+    salvar();
+  }
+
+  function limparCarrinho() {
+    carrinho1 = carrinho2 = carrinho3 = 0;
+    salvar();
+  }
+
+  function salvar() {
+    localStorage.setItem('carrinho1', carrinho1);
+    localStorage.setItem('carrinho2', carrinho2);
+    localStorage.setItem('carrinho3', carrinho3);
+    atualizarResumo();
+  }
+
+  atualizarResumo();
+</script>
+
+</body>
+
+
+
+<footer style="margin-top: 20px;" class="bg-dark text-light py-3">
+    <div class="container text-center">
+    @2025 William Cruz | Web Developer | <a href="politica-privacidade.html" class="text-light">Política de Privacidade</a> </div>
+  
+  </footer>
+</html>

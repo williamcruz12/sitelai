@@ -1,0 +1,157 @@
+
+   html, body {
+    font-family:;
+    background-color: #FEFAF6 !important;
+    overflow-x: hidden;
+    max-width: 100%;
+  }
+
+  h1, h2, h3, h4, h5{
+  color: #6D4C2F !important;
+  font-family: "Cinzel Decorative", serif !important;
+  font-weight: 700 !important;
+  }
+
+
+p{
+  color: #6D4C2F;
+  font-family: "Cinzel Decorative", serif;
+}
+  
+    #nav{
+      text-align: center;
+      color: #6D4C2F !important;
+    
+    }
+  
+    .navbar {
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    
+
+   p{
+    text-align: justify;
+   }
+  
+  
+  .video {
+      height: 400px!important;
+      width: 100%!important;
+      position: relative!important;
+    }
+  
+  .video video {
+    width: 100%!important;
+    height: 100%!important;
+    position: absolute!important;
+    object-fit: cover!important;
+    z-index: 0!important;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Efeito de sombra */
+        border-radius: 10px; /* Se quiser bordas arredondadas */
+    }
+  
+  /* h1 video*/
+  .video .caption {
+    z-index: 1!important;
+    position: relative!important;
+    text-align: center!important;
+    color:#ffa500;
+    text-shadow: 0 4px 8px black;
+    margin: auto;
+  }
+  
+  /* Oque fazer  */
+  .zoom-on-hover {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .zoom-on-hover:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Animação suave no scroll */
+  [data-aos="fade-up"] {
+    transition: opacity 1s, transform 1s;
+  }
+  [data-aos="fade-right"] {
+    transition: opacity 1s, transform 1s;
+  }
+  [data-aos="fade-left"] {
+    transition: opacity 1s, transform 1s;
+  }
+  
+  .carousel-inner img {
+    max-height: 0px; /* ajuste a altura conforme seu gosto */
+    object-fit: cover;
+    width: 10%;
+  }
+  
+  
+  .carousel-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 1vh;
+  
+  }
+  
+  #carouselExampleCaptions {
+    width: 70%;
+    height: 20%;
+    
+  }
+  
+  .carousel-inner img {
+    max-height: 20%;
+    object-fit: cover;
+  }
+  
+  .carousel-caption {
+                      /* fundo escuro com transparência */
+    padding: 1rem;
+    border-radius: 1px;
+  }
+  
+   #forn{
+    width: 90%;
+   }
+  
+  
+  /* Tela pequena arvore  */
+   @media (max-width: 767px) {
+    .col-12 img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  
+  /* Ajusta a margem entre os cartões */
+  .card {
+    margin: 15px; /* Ajuste esse valor conforme a necessidade */
+  }
+  
+  /* Se você também quiser ajustar a margem entre a linha dos cartões */
+  .row {
+    margin-left: -15px; /* Ajuste esse valor para garantir que o espaçamento entre as colunas não seja muito grande */
+    margin-right: -15px;
+    margin-top: -15px;
+  }
+  
+  /* Responsividade para telas pequenas */
+  @media (max-width: 576px) {
+    .card {
+      margin: 20px 5; /* Menor margem para telas pequenas */
+    }
+  }
+  
+  #historia{
+    padding-bottom: 0;
+   
+  }
+
+/* Cor de fundo da dropdown de países */
+.iti__country {
+    background-color: black !important; /* Substitua pela cor desejada */
+  }
+  
