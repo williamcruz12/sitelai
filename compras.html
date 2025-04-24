@@ -103,62 +103,49 @@
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid justify-content-between">
           <img src="logo.PNG" alt="" width="60px">
-        
           <div>
             <button class="btn btn-outline-dark cart-btn" onclick="carringoGeral()">
               <i class="fas fa-shopping-cart"></i>
               <span id="cart-count">0</span>
             </button>
-
             <button class="btn btn-danger" onclick="removerItemDoCarrinhoGeral()">
-              Remover 1 item </button>
-              <div class="mt-4" onclick="">
-                <h5>Resumo do Carrinho:</h5>
-                <ul>
-                  <li>Caixa 5Lt: <span id="resumo1">0</span> unidades</li>
-                  <li>Galão 5Lt: <span id="resumo2">0</span> unidades</li>
-                  <li>Combo Caixa + Galão: <span id="resumo3">0</span> unidades</li>
-                </ul>
-                <strong>Total: € <span id="valor-total">0.00</span></strong>
-        
-                <button class="btn btn-primary ms-2 btn-blink" onclick="window.location.href='pagamento.html'">Finalizar Compra</button>
-        </div>
-        
+              Remover 1 item 
+            </button>
+
+            <div class="mt-4">
+              <h5>Resumo do Carrinho:</h5>
+              
+              <!-- Resumo das quantidades dos produtos -->
+              <ul style="display: none;">
+                <li>Caixa 5Lt: <span id="resumo1">0</span> unidades</li>
+                <li>Galão 5Lt: <span id="resumo2">0</span> unidades</li>
+                <li>Combo Caixa + Galão: <span id="resumo3">0</span> unidades</li>
+              </ul>
+              
+              <!-- Exibe apenas o total -->
+              <strong>Total: € <span id="valor-total">0.00</span></strong>
+              
+              <!-- Botão de finalizar compra -->
+              <button id="finalizar1" class="btn btn-primary ms-2 btn-blink" onclick="window.location.href='pagamento.html'">
+                Finalizar Compra
+              </button>
+            </div>
       </nav>
 
 </header> 
 
 <main>
-
-  <div class="container py-5" id="historia">
-    <h2 id="azeite1" class="mb-4 text-center">O Azeite </h2>
-    <br><br><br>
-    <div class="row align-items-center g-4">
-      <!-- Coluna da imagem -->
-      <div class="col-12 col-md-4">
-        <img src="azeitemovel.JPG" alt="Azeite artesanal" class="img-fluid" style="border-radius: 10px; box-shadow: 0px 2px 2px #ffa500; ">
-      </div>
-  
-      <!-- Coluna do texto -->
-      <div id="texto" class="col-12 col-md-8">
-        <p><strong> 🫒 Descubra o Sabor Autêntico do Nosso Azeite Artesanal</strong> <br><br>
-          Produzido nas encostas soalheiras de Freixo de Espada à Cinta, o nosso azeite é muito mais do que um simples condimento — é uma verdadeira expressão da terra, da tradição e do cuidado com que cada gota é extraída. <br>
-          Com um sabor frutado e ligeiramente picante, este azeite virgem extra destaca-se pela sua qualidade superior, extraído a frio de azeitonas cuidadosamente colhidas à mão. O aroma lembra o verde fresco do campo, com notas de erva cortada, maçã e amêndoa — uma combinação única que transforma qualquer prato numa experiência gastronómica.
-          <br>
-          Ideal para temperar saladas, realçar sabores em pratos tradicionais ou simplesmente saborear com pão rústico, este azeite é um verdadeiro tesouro da nossa região.
-          <br><br>
-          🎁 <strong>Adquira já o seu e leve para casa o sabor autêntico de Freixo de Espada à Cinta. Cada garrafa é um pedaço da nossa história e paixão!</strong>  </p>
-      </div>
-    </div>
-  </div>
+<br><br>
+    <h5 style="text-align: center;">Adquira já, Cada garrafa é um pedaço da nossa história e paixão!</h5>
+      
 
 
   <div class="container py-5">
     <div class="row row-cols-1 row-cols-md-3 g-4">
        <!-- Produto 1 -->
     <div class="col">
-      <div class="card h-100">
-        <img src="azeitebase.JPG" class="card-img-top" alt="Azeite Caixa 5Lt">
+      <div class="card h-80">
+        <img style="width: 350px; height: 280px;" src="azeite4.JPG" class="card-img-top" alt="Azeite Caixa 5Lt">
         <div class="card-body">
           <h5 class="card-title">Azeite Caixa 5Lt</h5>
           <p class="card-text">€ 39,90</p>
@@ -173,8 +160,8 @@
 
       <!-- Produto 2 -->
     <div class="col">
-      <div class="card h-100">
-        <img src="Azeitegalao.JPG" class="card-img-top" alt="Azeite Galão 5Lt">
+      <div class="card h-80">
+        <img style="width: 350px; height: 280px;" src="Azeitegalao.JPG" class="card-img-top" alt="Azeite Galão 5Lt">
         <div class="card-body">
           <h5 class="card-title">Azeite Galão 5Lt</h5>
           <p class="card-text">€ 39,90</p>
@@ -189,8 +176,8 @@
 
     <!-- Produto 3 -->
     <div class="col">
-      <div class="card h-100">
-        <img src="azeitemovel.JPG" class="card-img-top" alt="Combo Caixa + Galão">
+      <div class="card h-80">
+        <img style="width: 350px; height: 280px;" src="azeitemovel.JPG" class="card-img-top" alt="Combo Caixa + Galão">
         <div class="card-body">
           <h5 class="card-title">Combo Caixa + Galão 5Lt</h5>
           <p class="card-text">€ 79,90</p>
@@ -202,6 +189,7 @@
         </div>
       </div>
     </div>
+    
 
     </div>
   </div>
@@ -212,57 +200,33 @@
 </main>
 
 
-  <div class="container">
-    <div id="form" class="bg-dark text-white py-4 px-4 mt-5 mx-auto" style="max-width: 700px; border-radius: 10px;">
-      <h3 class="text-center mb-4">Compre agora</h3>
-      <p style="text-align: center;">preencha os dados para entrega</p>
-      <form>
-        <div class="row mb-3">
-          <div class="col-md-6">
-            <label for="nome" class="form-label">Nome</label>
-            <input type="text" class="form-control" id="nome" placeholder="Seu nome" required onchange="validarNome(this)">
-          </div>
-          <div class="col-md-6">
-            <label for="email" class="form-label">E-mail</label>
-            <input type="email" class="form-control" id="email" placeholder="seu@email.com" required>
-          </div>
-        </div>
-
-        <div class="row mb-3">
-          <div class="col-md-6">
-            <label for="contacto" class="form-label">Contacto</label>
-            <div class="position-relative">
-              <input type="tel" class="form-control" id="contacto" placeholder="Digite seu telefone" required >
-            </div>
-          </div>
-          <div class="col-md-6">
-            <label for="cidade" class="form-label">Morada completa com numero.</label>
-            <input type="text" class="form-control" id="cidade" placeholder="Sua cidade e país" required>
-          </div>
-          <div class="col-md-6">
-            <label for="cidade" class="form-label">Cidade / País</label>
-            <input type="text" class="form-control" id="cidade" placeholder="Sua cidade e país" required>
-          </div>
-          <div class="col-md-6">
-            <label for="cidade" class="form-label">codigo postal</label>
-            <input type="text" class="form-control" id="cidade" placeholder="Sua cidade e país" required>
-          </div>
-        </div>
-  
-        <div class="mb-3">
-          <label for="mensagem" class="form-label">Deixe sua observação para entrega</label>
-          <textarea class="form-control" id="mensagem" rows="4" placeholder="Escreva sua dúvida aqui..." required></textarea>
-        </div>
-  
-        <div class="text-center">
-          <button class="btn btn-success btn-lg btn-blink" onclick="finalizarCompra()">
-            Finalizar Compra
-            <i class="fas fa-check-circle ms-2"></i>
-          </button>
-        </div>
-      </form>
+<div class="container py-5" id="historia">
+  <div class="row align-items-center g-4">
+    <!-- Coluna da imagem -->
+    <div class="col-12 col-md-4">
+      <img src="azeitemovel.JPG" alt="Azeite artesanal" class="img-fluid" style="border-radius: 10px; box-shadow: 0px 2px 2px #ffa500; ">
     </div>
-  </div>
+
+    <!-- Coluna do texto -->
+    <div id="texto" class="col-12 col-md-8">
+      <p><strong> 🫒 Descubra o Sabor Autêntico do Nosso Azeite Artesanal</strong> <br><br>
+        Produzido nas encostas soalheiras de Freixo de Espada à Cinta, o nosso azeite é muito mais do que um simples condimento — é uma verdadeira expressão da terra, da tradição e do cuidado com que cada gota é extraída. <br>
+        Com um sabor frutado e ligeiramente picante, este azeite virgem extra destaca-se pela sua qualidade superior, extraído a frio de azeitonas cuidadosamente colhidas à mão. O aroma lembra o verde fresco do campo, com notas de erva cortada, maçã e amêndoa — uma combinação única que transforma qualquer prato numa experiência gastronómica.
+        <br>
+        Ideal para temperar saladas, realçar sabores em pratos tradicionais ou simplesmente saborear com pão rústico, este azeite é um verdadeiro tesouro da nossa região.
+        <br><br>
+        🎁 <strong>Adquira já o seu e leve para casa o sabor autêntico de Freixo de Espada à Cinta. Cada garrafa é um pedaço da nossa história e paixão!</strong>  </p>
+    </div>
+    <div class="text-center">
+      <button class="btn btn-success btn-lg btn-blink"  onclick="window.location.href='pagamento.html'">
+        Finalizar Compra
+        <i class="fas fa-check-circle ms-2"></i>
+      </button>
+    </div>
+  
+</div>
+
+  
   <br>
   <a href="index.html">VOLTAR A PAGINA Principal</a>
   <br>
@@ -315,6 +279,9 @@
   function removerDoCarrinho1() {
     if (carrinho1 > 0) {
       carrinho1--;
+      if (carrinho1 <= 0){
+        alert('O carrinho esta vazio!')
+      }
       atualizarCarrinhoGeral();
     }
   }
@@ -327,6 +294,9 @@
   function removerDoCarrinho2() {
     if (carrinho2 > 0) {
       carrinho2--;
+      if (carrinho2 <= 0){
+        alert('O carrinho esta vazio!')
+      }
       atualizarCarrinhoGeral();
     }
   }
@@ -339,6 +309,9 @@
   function removerDoCarrinho3() {
     if (carrinho3 > 0) {
       carrinho3--;
+      if (carrinho3 <= 0){
+        alert('O carrinho esta vazio!')
+      }
       atualizarCarrinhoGeral();
     }
   }
@@ -362,6 +335,11 @@
 
   // Carrega dados ao abrir a página
   window.onload = atualizarCarrinhoGeral;
+
+
+
+
+
 </script>
 
 
